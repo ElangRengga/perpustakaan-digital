@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Simple Digital Library</title>
+</head>
+<body>
+    <header>
+        <h1>Digital Library</h1>
+    </header>
+    <main>
+        <form id="book-form">
+            <input type="text" id="book-title" placeholder="Book Title" required>
+            <input type="text" id="book-author" placeholder="Author" required>
+            <input type="date" id="release-date" required>
+            <select id="book-genre" required>
+                <option value="" disabled selected>Select Genre</option>
+                <option value="Romance">Romance</option>
+                <option value="Horror">Horror</option>
+                <option value="Fantasy">Fantasy</option>
+                <option value="Drama">Drama</option>
+                <option value="Comedy">Comedy</option>
+            </select>
+            <button type="submit">Add Book</button>
+        </form>
+        
+        <select id="genre-search">
+            <option value="" selected>All Genres</option>
+            <option value="Romance">Romance</option>
+            <option value="Horror">Horror</option>
+            <option value="Fantasy">Fantasy</option>
+            <option value="Drama">Drama</option>
+            <option value="Comedy">Comedy</option>
+        </select>
+
+        <ul id="book-list"></ul>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
